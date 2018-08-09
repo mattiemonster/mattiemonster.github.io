@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>vdf</title>
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/vdf-grid.css">
+  <link rel="stylesheet" href="css/vdf.css">
+</head>
+<body class="body page-vdf clearfix">
+  <p class="text text-1">VDF</p>
+  <p class="text text-2">VDF - Vortex Data File - is a small, lightweight file format that can store basic types (int, string, float, etc) via binary serialisation and a friendly API. It's written in C# and can be used when referencing a DLL. There is also an explorer program (not fully functional). The vdf files (.vdf) are usually quite small, with only around 800 bytes of obligatory data.</p>
+  <p class="text text-3">Creating a VDF</p>
+  <p class="text text-4">VDF vdf = new VDF(vdf_name)</p>
+  <p class="text text-5">Item Types</p>
+  <div class="text text-6">
+    <p>Boolean - VDFBoolItem</p>
+    <p>Double - VDFDoubleItem</p>
+    <p>Float - VDFFloatItem</p>
+    <p>Int - VDFIntItem</p>
+    <p>Long - VDFLongItem</p>
+    <p>String - VDFStringItem</p>
+    <p>Base class - VDFItem</p>
+</div>
+  <p class="text text-7">Creating an Item</p>
+  <p class="text text-8">VDFItem item = new VDFItem(name, initialValue);</p>
+  <p class="text text-9">Replace VDFItem with the class name of the type of item you'd like to store (See Item Types)</p>
+  <p class="text text-10">Creating a Catagory</p>
+  <p class="text text-11">VDFCatagory catagory = new VDFCatagory(catagoryName);</p>
+  <p class="text text-12">Adding an Item to a Catagory</p>
+  <p class="text text-13">catagory.AddItem(item);</p>
+  <p class="text text-14">Removing an Item from a Catagory</p>
+  <p class="text text-15">catagory.RemoveItem(item);</p>
+  <p class="text text-16">Add or Remove an Item from the root</p>
+  <p class="text text-17">vdf.AddItem(item); or vdf.Remove(item);</p>
+  <p class="text text-18">Load a VDF</p>
+  <p class="text text-19">VDFReader.LoadVDF(path); (RETURNS VDF OBJECT)</p>
+  <p class="text text-20">VDFReader.LoadVDF(streamWithVDFFile); (RETURNS VDF OBJECT)</p>
+  <p class="text text-21">Save a VDF</p>
+  <p class="text text-22">vdf.Save();</p>
+  <p class="text text-23">This method saves the VDF at the path stored at the VDFs 'savePath' value</p>
+  <p class="text text-24">vdf.Save(stream);</p>
+  <p class="text text-25">This method saves the VDF via a provided stream. The stream must already have a path set and be initialised.</p>
+  <p class="text text-26">vdf.Save(path);</p>
+  <p class="text text-27">This method saves the VDF by creating a new stream at the path provided and saves via that stream.</p>
+  <p class="text text-28">There is a .toString() override for a VDF, it prints out all items, catagories and items within catagories and prints out their names and values.</p>
+  <p class="text text-29">Download</p>
+  <button onClick="window.location='https://github.com/mattiemonster/VDF/releases/download/1.2.1/VDFLib.dll';" class="_button _button-1">Download</button>
+  <button onClick="window.location='https://github.com/mattiemonster/VDF';" class="_button _button-2">Source Link (GitHub)</button>
+  <button onClick="window.location='index.html';" class="_button _button-3">Back to Main Page</button>
+  <p class="text text-30">Last updated 09/08/2018</p>
+</body>
+</html>
