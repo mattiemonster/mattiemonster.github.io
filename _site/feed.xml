@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-29T20:17:15+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mattie’s Stuff</title><subtitle>A collection of stuff I've made as well as a general blog.</subtitle><entry><title type="html">VDF Tutorial</title><link href="http://localhost:4000/2018/08/29/vdftutorials.html" rel="alternate" type="text/html" title="VDF Tutorial" /><published>2018-08-29T19:26:18+01:00</published><updated>2018-08-29T19:26:18+01:00</updated><id>http://localhost:4000/2018/08/29/vdftutorials</id><content type="html" xml:base="http://localhost:4000/2018/08/29/vdftutorials.html">&lt;h2 id=&quot;vdf-tutorials-and-examples&quot;&gt;VDF Tutorials and Examples&lt;/h2&gt;
+
+&lt;p&gt;This post will tell you how to use the C# VDF library.&lt;/p&gt;
+
+&lt;h3 id=&quot;namespace&quot;&gt;Namespace&lt;/h3&gt;
+
+&lt;p&gt;All of the VDF Lib (except items) is included in the VDFLib namespace.&lt;/p&gt;
+
+&lt;p&gt;Make sure to include this at the top of any file you wish to use the API in:&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;VDFLib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;creating-a-vdf&quot;&gt;Creating a VDF&lt;/h3&gt;
+
+&lt;p&gt;You must create a VDF object to add items and catagories to it.&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;VDF&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vdf&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;VDF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Put a vdf name here as a string&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;/2018/08/29/vdflib.html&quot;&gt;VDFLib Main Page&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">VDF Tutorials and Examples</summary></entry><entry><title type="html">VDF Lib</title><link href="http://localhost:4000/2018/08/29/vdflib.html" rel="alternate" type="text/html" title="VDF Lib" /><published>2018-08-29T19:26:18+01:00</published><updated>2018-08-29T19:26:18+01:00</updated><id>http://localhost:4000/2018/08/29/vdflib</id><content type="html" xml:base="http://localhost:4000/2018/08/29/vdflib.html">&lt;h3 id=&quot;the-vdf-lib-is-a-library-for-creating-vortex-data-files-vdf&quot;&gt;The VDF Lib is a library for creating Vortex Data Files (.vdf).&lt;/h3&gt;
+
+&lt;p&gt;It’s written in C# and can currently only be used in .NET (supports standard) applications.&lt;/p&gt;
+
+&lt;p&gt;It stores data in .vdf files and those files are very small, with about 800 bytes of obligatory data.&lt;/p&gt;
+
+&lt;p&gt;The items can be split up into categories.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/2018/08/29/vdftutorials.html&quot;&gt;VDF Tutorials&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">The VDF Lib is a library for creating Vortex Data Files (.vdf).</summary></entry><entry><title type="html">Welcome!</title><link href="http://localhost:4000/2018/08/29/welcome.html" rel="alternate" type="text/html" title="Welcome!" /><published>2018-08-29T18:16:18+01:00</published><updated>2018-08-29T18:16:18+01:00</updated><id>http://localhost:4000/2018/08/29/welcome</id><content type="html" xml:base="http://localhost:4000/2018/08/29/welcome.html">&lt;h1 id=&quot;welcome-to-the-site&quot;&gt;Welcome to the site.&lt;/h1&gt;
+&lt;p&gt;Here, I’ll be posting some stuff I make. Software, games, libraries, code, whatever.&lt;/p&gt;
+
+&lt;p&gt;A little bit about me:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;My name is Matthew (or referred to Matt usually) and I live in the UK.&lt;/li&gt;
+  &lt;li&gt;I have 2 cats (at the time of writing)&lt;/li&gt;
+  &lt;li&gt;I’m an only child. How lonely I am.&lt;/li&gt;
+  &lt;li&gt;I program mostly in C#, however I know quite a few languages. I can use languages like Java and C++.&lt;/li&gt;
+  &lt;li&gt;I really enjoy making games in Unity. I’m interested in learning Unreal Engine, as well as other popular engines.&lt;/li&gt;
+  &lt;li&gt;I’m terrible about graphics programming, but I’m really interested in learning it.&lt;/li&gt;
+  &lt;li&gt;I hate C++ so much.&lt;/li&gt;
+  &lt;li&gt;I know how to make a blue triangle in intermediate OpenGL. That’s pretty much it.&lt;/li&gt;
+  &lt;li&gt;I use Visual Studio to code. I’ve tried using MonoDevelop and Code::Blocks, but never found them very practical.&lt;/li&gt;
+  &lt;li&gt;I map for Source Engine games, mostly Half-Life 2: Episode 2.&lt;/li&gt;
+  &lt;li&gt;I put way too much unnecessary information in about me pages.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Welcome to the site. Here, I’ll be posting some stuff I make. Software, games, libraries, code, whatever.</summary></entry></feed>
