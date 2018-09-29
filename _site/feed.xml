@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-29T21:45:16+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mattie’s Stuff</title><subtitle>A collection of stuff I've made as well as a general blog.</subtitle><entry><title type="html">VDF Tutorial</title><link href="http://localhost:4000/2018/08/29/vdftutorials.html" rel="alternate" type="text/html" title="VDF Tutorial" /><published>2018-08-29T19:26:18+01:00</published><updated>2018-08-29T19:26:18+01:00</updated><id>http://localhost:4000/2018/08/29/vdftutorials</id><content type="html" xml:base="http://localhost:4000/2018/08/29/vdftutorials.html">&lt;h2 id=&quot;vdf-tutorials-and-examples&quot;&gt;VDF Tutorials and Examples&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-29T22:01:03+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mattie’s Stuff</title><subtitle>A collection of stuff I've made as well as a general blog.</subtitle><entry><title type="html">VDF Tutorial</title><link href="http://localhost:4000/2018/08/29/vdftutorials.html" rel="alternate" type="text/html" title="VDF Tutorial" /><published>2018-08-29T19:26:18+01:00</published><updated>2018-08-29T19:26:18+01:00</updated><id>http://localhost:4000/2018/08/29/vdftutorials</id><content type="html" xml:base="http://localhost:4000/2018/08/29/vdftutorials.html">&lt;h2 id=&quot;vdf-tutorials-and-examples&quot;&gt;VDF Tutorials and Examples&lt;/h2&gt;
 
 &lt;p&gt;This post will tell you how to use the C# VDF library.&lt;/p&gt;
 
@@ -138,6 +138,10 @@ Base class - VDFItem
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;This method loads a VDF from the file loaded in the provided FileStream.&lt;/p&gt;
+
+&lt;h3 id=&quot;tostring&quot;&gt;ToString()&lt;/h3&gt;
+
+&lt;p&gt;There is a ToString override for VDF, this provides a string featuring all catagories and items with their values.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/2018/08/29/vdflib.html&quot;&gt;VDFLib Main Page&lt;/a&gt;&lt;/p&gt;
 

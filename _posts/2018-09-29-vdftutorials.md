@@ -162,6 +162,10 @@ VDFReader.LoadVDF(fileStream)
 
 This method loads a VDF from the file loaded in the provided FileStream.
 
+### ToString()
+
+There is a ToString override for VDF, this provides a string featuring all catagories and items with their values.
+
 [VDFLib Main Page]({% post_url 2018-09-29-vdflib %})
 
 {% include advertisements.html %}
