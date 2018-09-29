@@ -22,3 +22,5 @@ The VDF explorer is currently *very* buggy and is still in development.
 Chrome will warn you about the dangers of dll files when downloading the VDFLib.dll file. The file is perfectly safe; if you don't believe me, check the source code or decompile the dll file (you can as it's written in C#, just use something like dotPeek)
 
 [Source Code](https://github.com/mattiemonster/VDF)
+
+{% include advertisements.html %}

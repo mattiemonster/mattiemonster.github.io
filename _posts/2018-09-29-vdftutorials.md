@@ -27,3 +27,5 @@ VDF vdf = new VDF("Put a vdf name here as a string");
 ```
 
 [VDFLib Main Page]({% post_url 2018-09-29-vdflib %})
+
+{% include advertisements.html %}
