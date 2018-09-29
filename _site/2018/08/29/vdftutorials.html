@@ -65,6 +65,127 @@
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">VDF</span> <span class="n">vdf</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">VDF</span><span class="p">(</span><span class="s">"Put a vdf name here as a string"</span><span class="p">);</span>
 </code></pre></div></div>
 
+<h3 id="item-namespace">Item Namespace</h3>
+
+<p>The VDFItem section of the library is stored in the namespace ‘VDFLib.Items’</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">VDFLib.Items</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="item-types">Item Types</h3>
+
+<p>Before we create an item, lets go through the provided item types.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Boolean - VDFBoolItem
+Double - VDFDoubleItem
+Float - VDFFloatItem
+Int - VDFIntItem
+Long - VDFLongItem
+String - VDFStringItem
+Base class - VDFItem
+</code></pre></div></div>
+
+<p>You can create your own types of item as well.</p>
+
+<h3 id="creating-an-item">Creating an Item</h3>
+
+<p>We can create an item by making a new VDFItem object.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">VDFItem</span> <span class="n">item</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">VDFItem</span><span class="p">(</span><span class="s">"Name as a string"</span><span class="p">,</span> <span class="n">initialValue</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>You can replace the second VDFItem with a more specific type of item, such as VDFIntItem.</p>
+
+<h3 id="adding-an-item-to-the-root-catagory-of-a-vdf">Adding an Item to the Root Catagory of a VDF</h3>
+
+<p>We can easily add an item object to the root directory of a VDF object.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">vdf</span><span class="p">.</span><span class="nf">AddItem</span><span class="p">(</span><span class="n">item</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="removing-an-item-from-the-root-catagory-of-a-vdf">Removing an Item from the Root Catagory of a VDF</h3>
+
+<p>We can easily remove an item object from the root directory of a VDF object.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">vdf</span><span class="p">.</span><span class="nf">RemoveItem</span><span class="p">(</span><span class="n">item</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>There is also a RemoveItemAt method.</p>
+
+<h3 id="creating-a-catagory">Creating a Catagory</h3>
+
+<p>We can create a catagory by making a new VDFCatagory object.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">VDFCatagory</span> <span class="n">catagory</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">VDFCatagory</span><span class="p">(</span><span class="s">"Name as a string"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="adding-an-item-to-a-catagory">Adding an Item to a Catagory</h3>
+
+<p>We can add an item to a catagory via the AddItem method.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">catagory</span><span class="p">.</span><span class="nf">AddItem</span><span class="p">(</span><span class="n">item</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="removing-an-item-from-a-catagory">Removing an Item from a Catagory</h3>
+
+<p>We can easily remove an item object from a catagory.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">catagory</span><span class="p">.</span><span class="nf">RemoveItem</span><span class="p">(</span><span class="n">item</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>There is also a RemoveItemAt method.</p>
+
+<h3 id="adding-a-catagory-to-a-vdf">Adding a Catagory to a VDF</h3>
+
+<p>Using the AddCatagory method, we can add a catagory to a VDF.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">vdf</span><span class="p">.</span><span class="nf">AddCatagory</span><span class="p">(</span><span class="n">catagory</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="removing-a-catagory-from-a-vdf">Removing a Catagory from a VDF</h3>
+
+<p>Using the RemoveCatagory method, we can remove a catagory from a VDF.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">vdf</span><span class="p">.</span><span class="nf">RemoveCatagory</span><span class="p">(</span><span class="n">catagory</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>There is also a RemoveCatagoryAt method.</p>
+
+<h3 id="save-a-vdf">Save a VDF</h3>
+
+<p>All below methods return void.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">vdf</span><span class="p">.</span><span class="nf">Save</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>This method saves the VDF at the path stored at the VDFs ‘savePath’ value. The savePath value is saved. It creates a FileStream which is safely disposed.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">vdf</span><span class="p">.</span><span class="nf">Save</span><span class="p">(</span><span class="n">filePath</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>This method saves the VDF by creating a new stream at the path provided and saves via that stream.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">vdf</span><span class="p">.</span><span class="nf">Save</span><span class="p">(</span><span class="n">fileStream</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>This method takes in a FileStream and saves via that stream.</p>
+
+<h3 id="loading-a-vdf">Loading a VDF</h3>
+
+<p>All methods below return a VDF object.</p>
+
+<p>These methods use the VDFReader class, a class that has some static utility methods to load a VDF.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">VDFReader</span><span class="p">.</span><span class="nf">LoadVDF</span><span class="p">(</span><span class="n">path</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>This method loads a VDF from the file at the specified path.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">VDFReader</span><span class="p">.</span><span class="nf">LoadVDF</span><span class="p">(</span><span class="n">fileStream</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>This method loads a VDF from the file loaded in the provided FileStream.</p>
+
 <p><a href="/2018/08/29/vdflib.html">VDFLib Main Page</a></p>
 
 <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
